@@ -1,0 +1,6 @@
+{
+    "discordToken" : "YOUR TOKEN HERE",
+    "DBLToken" : "DBL BOT TOKEN HERE",
+    "Comment1" : "This is post interval,CANNOT lower then 900000!",
+    "postInterval" : 1800000
+}
