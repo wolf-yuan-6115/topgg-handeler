@@ -1,10 +1,10 @@
 {
   "name": "topgg-handeler",
   "version": "1.0.0",
-  "description": "Basic top.gg handeler",
-  "main": "dblvote.js",
+  "description": "Basic top.gg api handeler",
+  "main": "index.js",
   "scripts": {
-    "test": "node dblvote.js"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
