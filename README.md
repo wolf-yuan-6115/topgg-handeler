@@ -1,4 +1,4 @@
-# topgg-handeler
+# Top.gg api handeler
 Basic top.gg(Discord bot list) api handeler
 
 ***
