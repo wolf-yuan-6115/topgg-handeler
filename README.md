@@ -24,3 +24,9 @@ Start the script using `npm`:
 Or start by `node`:
 
 `node index.js`
+
+***
+
+# Support
+
+You can add my Discord `Wolf yuan#6115` for support
