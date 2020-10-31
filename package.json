@@ -1,0 +1,19 @@
+{
+  "name": "topgg-handeler",
+  "version": "1.0.0",
+  "description": "Basic top.gg handeler",
+  "main": "dblvote.js",
+  "scripts": {
+    "test": "node dblvote.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolf-yuan-6115/topgg-handeler.git"
+  },
+  "author": "wolf yuan (Discord:Wolf yuan#6115)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wolf-yuan-6115/topgg-handeler/issues"
+  },
+  "homepage": "https://github.com/wolf-yuan-6115/topgg-handeler#readme"
+}
