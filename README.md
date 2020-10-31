@@ -13,6 +13,8 @@ cd topgg-handeler
 npm install
 ```
 
+***
+
 # Start
 
 Start the script using `npm`:
