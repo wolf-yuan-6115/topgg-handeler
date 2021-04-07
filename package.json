@@ -3,17 +3,26 @@
   "version": "1.0.0",
   "description": "Basic top.gg api handeler",
   "main": "index.js",
+  "engines": {
+    "node": ">= 12"
+  },
   "scripts": {
-    "test": "node index.js"
+    "test": "echo \"No test!\"",
+    "start": "node outdated.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wolf-yuan-6115/topgg-handeler.git"
   },
-  "author": "wolf yuan (Discord:Wolf yuan#6115)",
+  "author": "Wolf yuan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wolf-yuan-6115/topgg-handeler/issues"
   },
-  "homepage": "https://github.com/wolf-yuan-6115/topgg-handeler#readme"
+  "homepage": "https://github.com/wolf-yuan-6115/topgg-handeler#readme",
+  "dependencies": {
+    "conf": "^9.0.2",
+    "dblapi.js": "^2.4.1",
+    "discord.js": "^12.5.1"
+  }
 }

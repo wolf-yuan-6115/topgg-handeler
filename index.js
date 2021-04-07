@@ -1,30 +1,21 @@
 const Discord = require("discord.js");
-const client = new Discord.Client();
-const config = require("./config.json");
+const client = new Discord.client();
 const DBL = require("dblapi.js");
-const dbl = new DBL(config.DBLToken, client, {statsInterval: config.postInterval});
+const Conf = require("conf");
+const config = new Conf({cwd: "./.config"});
 
-console.log("Logging in...");
-client.login(config.discordToken);
-
-client.on("ready", () => {
-  console.log(`Logged as ${client.user.tag}!`);
-  dbl.postStats(client.guilds.cache.size);
-});
-
-client.on("guildCreate", guild => {
-  console.log(`Join new guild:${guild.name}`);
-});
-
-client.on("guildDelete", guild => {
-  console.log(`Leave guild:${guild.name}`);
-});
+let dbl;
+if ((config.get("dbl") && config.has("token")) || (process.env.dbl && process.env.token)) {
+  if (config.get("dbl") && config.get("token")) {
+    client.login(config.get("token"));
+  }
+}
+dbl = new DBL(config.DBLToken, client, {statsInterval: config.postInterval});
 
 dbl.on('posted', () => {
   console.log('Server count posted!');
 });
   
-dbl.on('error', e => {
-  console.log("Eww, something went wrong!");
-  console.log(e);
+dbl.on('error', () => {
+  console.log("Something happened!");
 });

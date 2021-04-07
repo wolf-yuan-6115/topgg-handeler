@@ -29,4 +29,4 @@ Or start by `node`:
 
 # Support
 
-You can add my Discord `Wolf yuan#6115` for support
+You can add my Discord `Wolf yuan#1135` for support
